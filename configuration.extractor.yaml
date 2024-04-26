@@ -3,15 +3,14 @@
 
  apiNames: 
   - dibya3
-  - dibya4
 
- backendNames: []
+ backendNames: [ignore]
 
- diagnosticNames: []
+ diagnosticNames: [ignore]
 
- loggerNames: []
+ loggerNames: [ignore]
 
- namedValueNames: []
+ namedValueNames: [ignore]
 
  productNames: 
   - dibyaproduct3
@@ -19,6 +18,6 @@
  subscriptionNames: 
   - dibya3
 
- tagNames: []
+ tagNames: [ignore]
   
- policyFragmentNames: []
+ policyFragmentNames: [ignore]
