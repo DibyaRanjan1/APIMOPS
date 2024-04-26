@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "displayName": "dibya2",
+    "isCurrent": true,
+    "path": "dibya2",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://dibya2.com",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}
