@@ -91,7 +91,6 @@ jobs:
           API_SPECIFICATION_FORMAT: ${{ github.event.inputs.API_SPECIFICATION_FORMAT }} 
           CONFIGURATION_YAML_PATH:  ${{ GITHUB.WORKSPACE }}//configuration.extractor.yaml
         run: |
-          Set-StrictMode -Version Latest
           $ErrorActionPreference = "Stop"
           $VerbosePreference = "Continue"
           $InformationPreference = "Continue"
