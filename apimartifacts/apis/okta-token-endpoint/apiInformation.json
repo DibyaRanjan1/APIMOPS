@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "path": "okta",
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2AuthenticationSettings": [],
+      "openidAuthenticationSettings": []
+    },
+    "description": "",
+    "isCurrent": true,
+    "displayName": "OKTA Token Endpoint",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://jllpoc.oktapreview.com/oauth2/default/v1",
+    "subscriptionKeyParameterNames": {
+      "header": "Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

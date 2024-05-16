@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "test-namedvalue7",
+    "secret": false,
+    "tags": [],
+    "value": "{\u0022url\u0022:\u0022www.dev.com\u0022}"
+  }
+}

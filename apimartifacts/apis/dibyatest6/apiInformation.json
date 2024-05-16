@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "path": "dibyatest6",
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2AuthenticationSettings": [],
+      "openidAuthenticationSettings": []
+    },
+    "description": "dibyatest6",
+    "isCurrent": true,
+    "displayName": "dibyatest6",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://dibyaapimdevtest.azure-api.net/dibyatest6",
+    "subscriptionKeyParameterNames": {
+      "header": "Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "displayName": "product6",
+    "description": "product6",
+    "approvalRequired": true,
+    "state": "published",
+    "subscriptionRequired": true,
+    "subscriptionsLimit": 10,
+    "terms": "product6"
+  }
+}

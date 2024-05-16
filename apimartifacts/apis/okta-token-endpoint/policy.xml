@@ -1,0 +1,72 @@
+<!--
+    IMPORTANT:
+    - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.
+    - To apply a policy to the incoming request (before it is forwarded to the backend service), place a corresponding policy element within the <inbound> section element.
+    - To apply a policy to the outgoing response (before it is sent back to the caller), place a corresponding policy element within the <outbound> section element.
+    - To add a policy, place the cursor at the desired insertion point and select a policy from the sidebar.
+    - To remove a policy, delete the corresponding policy statement from the policy document.
+    - Position the <base> element within a section element to inherit all policies from the corresponding section element in the enclosing scope.
+    - Remove the <base> element to prevent inheriting policies from the corresponding section element in the enclosing scope.
+    - Policies are applied in the order of their appearance, from the top down.
+    - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
+-->
+<policies>
+	<inbound>
+		<base />
+		<set-variable name="OktaCacheKey" value="@((context.Request.Headers.GetValueOrDefault("Authorization", "")))" />
+		<cache-lookup-value key="@((string)context.Variables["OktaCacheKey"])" variable-name="OKTAResponseCache" />
+		<!-- If API Management doesn’t find it in the cache, make a request for it and store it -->
+		<choose>
+			<when condition="@(context.Variables.ContainsKey("OKTAResponseCache"))">
+				<set-variable name="token" value="@{
+                
+                string cachedOKTAResponse = (string)context.Variables["OKTAResponseCache"];
+              var parsedJson =  (Newtonsoft.Json.Linq.JObject)JsonConvert.DeserializeObject(cachedOKTAResponse);
+              string access_token =  (string)parsedJson["access_token"];
+              return access_token;
+                }" />
+				<validate-jwt token-value="@((string)context.Variables["token"])" failed-validation-httpcode="501" failed-validation-error-message="Invalid Token!" output-token-variable-name="api.Auth.Token">
+					<openid-config url="https://jllpoc.oktapreview.com/oauth2/default/.well-known/openid-configuration" />
+					<audiences>
+						<audience>api://default</audience>
+					</audiences>
+					<issuers>
+						<issuer>https://jllpoc.oktapreview.com/oauth2/default</issuer>
+					</issuers>
+					<required-claims>
+						<claim name="scp" match="any">
+							<value>clientcredential</value>
+						</claim>
+					</required-claims>
+				</validate-jwt>
+			</when>
+		</choose>
+		<choose>
+			<when condition="@(context.Variables.ContainsKey("OKTAResponseCache"))">
+				<return-response>
+					<set-status code="200" reason="description" />
+					<set-header name="Content-Type" exists-action="override">
+						<value>application/json</value>
+					</set-header>
+					<set-body>@((string)context.Variables["OKTAResponseCache"])</set-body>
+				</return-response>
+			</when>
+		</choose>
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<base />
+		<choose>
+			<when condition="@(context.Response.StatusCode == 200)">
+				<set-variable name="responseValue" value="@(context.Response.Body.As<string>(preserveContent: true))" />
+				<cache-store-value key="@((string)context.Variables["OktaCacheKey"])" value="@((string)context.Variables["responseValue"])" duration="60" />
+			</when>
+		</choose>
+	</outbound>
+	<on-error>
+		<base />
+		<cache-remove-value key="@((string)context.Variables["OktaCacheKey"])" caching-type="external" />
+	</on-error>
+</policies>

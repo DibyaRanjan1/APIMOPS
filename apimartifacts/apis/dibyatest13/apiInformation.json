@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "path": "dibyatest13",
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2AuthenticationSettings": [],
+      "openidAuthenticationSettings": []
+    },
+    "description": "",
+    "isCurrent": true,
+    "displayName": "dibyatest13",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://dibyatest13.dev.jll.com",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

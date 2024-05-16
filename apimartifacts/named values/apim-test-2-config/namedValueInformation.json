@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "apim-test-2-config",
+    "secret": false,
+    "tags": [],
+    "value": "dev"
+  }
+}

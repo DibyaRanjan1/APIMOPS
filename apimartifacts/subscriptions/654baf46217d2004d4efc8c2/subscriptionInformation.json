@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "scope": "/subscriptions/be07098c-a0b3-4f26-8ba2-32490311a8d6/resourceGroups/JLL-AM-RG-APIM-Sandbox/providers/Microsoft.ApiManagement/service/DibyaAPIMDevTest/products/product8",
+    "allowTracing": false,
+    "ownerId": "/subscriptions/be07098c-a0b3-4f26-8ba2-32490311a8d6/resourceGroups/JLL-AM-RG-APIM-Sandbox/providers/Microsoft.ApiManagement/service/DibyaAPIMDevTest/users/1",
+    "state": "active"
+  }
+}
