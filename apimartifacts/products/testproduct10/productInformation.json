@@ -1,8 +1,8 @@
 {
   "properties": {
-    "displayName": "testproduct10",
-    "description": "testproduct10",
     "approvalRequired": true,
+    "description": "testproduct10",
+    "displayName": "testproduct10",
     "state": "published",
     "subscriptionRequired": true
   }
