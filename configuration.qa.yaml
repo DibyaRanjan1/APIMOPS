@@ -3,4 +3,4 @@ namedValues:
   - name: dibya-test-1
     properties:
       displayName: dibya-test-1
-      value: "{\u0022url\u0022:\u0022https://qa111.com\u0022}"
+      value: "https://qa111.com"
