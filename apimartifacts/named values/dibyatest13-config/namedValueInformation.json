@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "dibyatest13-config",
+    "secret": false,
+    "tags": [],
+    "value": "{\u0022url\u0022:\u0022https://dev.jll.dibyatest13.com\u0022}"
+  }
+}

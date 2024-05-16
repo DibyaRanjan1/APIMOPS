@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "test-namedvalue5",
+    "secret": false,
+    "tags": [],
+    "value": "dev"
+  }
+}

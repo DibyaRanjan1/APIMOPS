@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "displayName": "test-namedvalue10",
+    "secret": false,
+    "tags": [
+      "test-namedvalue10"
+    ],
+    "value": "{\u0022url\u0022:\u0022https://devdibya.com\u0022,\u0022ratelimit\u0022:\u002210\u0022}"
+  }
+}

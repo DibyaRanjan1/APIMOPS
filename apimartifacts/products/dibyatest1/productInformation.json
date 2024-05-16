@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "displayName": "dibyatest1",
+    "description": "dibyatest1",
+    "approvalRequired": true,
+    "state": "published",
+    "subscriptionRequired": true,
+    "terms": "dibyatest1"
+  }
+}

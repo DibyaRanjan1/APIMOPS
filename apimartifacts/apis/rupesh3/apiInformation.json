@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "path": "rupesh3",
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2AuthenticationSettings": [],
+      "openidAuthenticationSettings": []
+    },
+    "description": "",
+    "isCurrent": true,
+    "displayName": "rupesh3",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://rupeshdev3.azure-api.net/rupesh3",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

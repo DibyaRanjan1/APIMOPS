@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "path": "dibyatest5",
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2AuthenticationSettings": [],
+      "openidAuthenticationSettings": []
+    },
+    "description": "",
+    "isCurrent": true,
+    "displayName": "dibyatest5",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://dibyaapimdevtest.azure-api.net/dibyatest5",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

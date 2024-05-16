@@ -1,0 +1,28 @@
+openapi: 3.0.1
+info:
+  title: OKTA Token Endpoint
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://dibyaapimdevtest.azure-api.net/okta
+paths:
+  /token:
+    post:
+      summary: POST
+      operationId: post
+      responses:
+        '200':
+          description: 
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

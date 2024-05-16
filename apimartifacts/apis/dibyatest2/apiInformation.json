@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "path": "dibyatest2",
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2AuthenticationSettings": [],
+      "openidAuthenticationSettings": []
+    },
+    "description": "",
+    "isCurrent": true,
+    "displayName": "dibyatest2",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://dibyatest2.dev.com",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}
