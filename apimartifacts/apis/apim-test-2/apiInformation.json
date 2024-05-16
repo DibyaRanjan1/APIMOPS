@@ -1,14 +1,11 @@
 {
   "properties": {
-    "path": "apim-test-2",
     "apiRevision": "1",
-    "authenticationSettings": {
-      "oAuth2AuthenticationSettings": [],
-      "openidAuthenticationSettings": []
-    },
+    "authenticationSettings": {},
     "description": "",
-    "isCurrent": true,
     "displayName": "Apim Test 2",
+    "isCurrent": true,
+    "path": "apim-test-2",
     "protocols": [
       "https"
     ],
