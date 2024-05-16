@@ -1,14 +1,11 @@
 {
   "properties": {
-    "path": "rupesh2",
     "apiRevision": "1",
-    "authenticationSettings": {
-      "oAuth2AuthenticationSettings": [],
-      "openidAuthenticationSettings": []
-    },
+    "authenticationSettings": {},
     "description": "",
-    "isCurrent": true,
     "displayName": "rupesh2",
+    "isCurrent": true,
+    "path": "rupesh2",
     "protocols": [
       "https"
     ],

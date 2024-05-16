@@ -1,14 +1,11 @@
 {
   "properties": {
-    "path": "okta",
     "apiRevision": "1",
-    "authenticationSettings": {
-      "oAuth2AuthenticationSettings": [],
-      "openidAuthenticationSettings": []
-    },
+    "authenticationSettings": {},
     "description": "",
-    "isCurrent": true,
     "displayName": "OKTA Token Endpoint",
+    "isCurrent": true,
+    "path": "okta",
     "protocols": [
       "https"
     ],

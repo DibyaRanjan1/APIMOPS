@@ -1,14 +1,11 @@
 {
   "properties": {
-    "path": "dibyatest10",
     "apiRevision": "1",
-    "authenticationSettings": {
-      "oAuth2AuthenticationSettings": [],
-      "openidAuthenticationSettings": []
-    },
+    "authenticationSettings": {},
     "description": "",
-    "isCurrent": true,
     "displayName": "dibyatest10",
+    "isCurrent": true,
+    "path": "dibyatest10",
     "protocols": [
       "https"
     ],
